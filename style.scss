@@ -43,7 +43,7 @@ body {
     gap: 40px;
 
     @media screen and (max-width: 768px) {
-        width: auto;
+        width: 450px;
     }
 
     &__img img {
@@ -54,6 +54,11 @@ body {
         object-fit: cover;
         display: block;
         box-shadow: 0 10px 60px -10px rgba(13, 28, 39, .5);
+
+        @media screen and (max-width: 768px) {
+            width: 150px;
+            height: 150px;
+        }
     }
 
     &__desc {
@@ -68,7 +73,19 @@ body {
 
             & + div {
                 font-size: 20px;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 15px;
+                }
             }
+
+            @media screen and(max-width: 768px) {
+                font-size: 1.8rem;
+            }
+        }
+
+        @media screen and(max-width: 768px) {
+            gap: 15px;
         }
     }
 
@@ -92,11 +109,21 @@ body {
                 letter-spacing: 3px;
                 font-size: 2rem;
                 margin-bottom: 15px;
+
+                @media screen and(max-width: 768px) {
+                    letter-spacing: 1px;
+                    font-size: 1.5rem;
+                    margin-bottom: 10px;
+                }
             }
 
             & > *:last-child {
                 font-size: 16px;
                 opacity: .7;
+
+                @media screen and(max-width: 768px) {
+                    font-size: 13px;
+                }
             }
         }
     }
@@ -123,7 +150,7 @@ body {
             @media screen and (max-width: 768px) {
                 width: 50px;
                 height: 50px;
-                margin: 30px;
+                margin: 20px;
             }
 
             &:hover {
